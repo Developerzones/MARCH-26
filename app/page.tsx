@@ -1,8 +1,12 @@
 'use client';
 
+import Header from "@/src/fixed/header/page";
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0d0d0d] text-white flex flex-col items-center justify-center text-center px-6 relative overflow-hidden font-sans">
+    <>
+    <Header/>
+    <div className="min-h-screen bg-[#dddbdb] flex flex-col items-center justify-center text-center px-6 relative overflow-hidden font-sans">
 
       {/* Subtle background gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(40,40,255,0.15),transparent_60%)]"></div>
@@ -13,13 +17,13 @@ export default function Home() {
 
       {/* Title */}
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight animate-logo">
-        <span className="inline-block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+        <span className="inline-block bg-gradient-to-r from-blue-800 to-purple-800 bg-clip-text text-transparent">
           S W E A P
         </span>
       </h1>
 
       {/* Subtitle */}
-      <p className="text-lg md:text-xl max-w-2xl text-gray-300 mb-10 animate-slideUp leading-relaxed">
+      <p className="text-lg md:text-xl max-w-2xl text-black mb-10 animate-slideUp leading-relaxed">
         We're crafting an ecommerce experience that feels human — designed with care, speed, and trust at its core. No noise. No clutter. Just pure shopping bliss.
       </p>
 
@@ -65,5 +69,7 @@ export default function Home() {
         }
       `}</style>
     </div>
+
+    </>
   );
 }
